@@ -3,14 +3,14 @@ package main
 import (
 	"log"
 
-	todo "github.com/gimaevra94/todo/pkg"
-	handler "github.com/gimaevra94/todo/pkg/handlers"
+	todo "github.com/gimaevra94/todo"
+	handler "github.com/gimaevra94/todo/pkg/handler"
 )
 
 func main() {
-	handlers := new(handler.Handler)
-	server := new(todo.Server)
-	if err := server.Run("8000", handlers.InitRoutes()); err != nil {
+	handler := new(handler.Handler)
+	srv := new(todo.Server)
+	if err := srv.Run("8000", handler.InitRoutes()); err != nil {
 		log.Fatalf(err.Error())
 	}
 }
