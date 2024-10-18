@@ -3,7 +3,12 @@ module github.com/gimaevra94/todo
 go 1.23.1
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.10.0
+	github.com/jmoiron/sqlx v1.4.0
+	github.com/joho/godotenv v1.5.1
+	github.com/lib/pq v1.10.9
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/viper v1.19.0
 )
 
