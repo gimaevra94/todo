@@ -4,6 +4,6 @@ db:
   username: "postgres"
   host: "localhost"
   password: "qwerty"
-  port: "56219"
+  port: "58986"
   dbname: "postgres"
   sslmode: "disable"
